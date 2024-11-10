@@ -1,0 +1,54 @@
+[
+    {
+        "id": 1,
+        "name": "Brac - Aarong",
+        "position": "UI/UX Engineer",
+        "time": "May 2023-Present",
+        "location": "Dhaka, Bangladesh",
+        "responsibilities": [
+            "Understanding and addressing clients' business goals and objectives, ensuring their requirements are met",
+            "Developing comprehensive requirements that align with user-centered and intuitive solutions",
+            "Creating visually appealing and impactful presentations to effectively communicate proposed solutions",
+            "Generating innovative ideas, wireframes, and mockups that enhance user experiences and drive client satisfaction"
+        ]
+    },
+    {
+        "id": 2,
+        "name": "BYSL Global Technology Group",
+        "position": "UI/UX Developer",
+        "time": "Feb 2022-May 2023",
+        "location": "Dhaka, Bangladesh",
+        "responsibilities": [
+            "Prioritize understanding user experience needs to inform project planning and implementation",
+            "Utilize Figma to prototype user flows for effective visualization and iteration",
+            "Implement project flows by converting UI designs into React.js components using Material UI, ensuring responsiveness across screens",
+            "Collaborate closely with backend development teams for seamless integration of REST APIs and cohesive project execution"
+        ]
+    },
+    {
+        "id": 3,
+        "name": "Techhack Canada",
+        "position": "Front-end Developer",
+        "time": "Sep 2021-Feb 2022",
+        "location": "Dhaka, Bangladesh",
+        "responsibilities": [
+            "Understanding and addressing clients' business goals and objectives, ensuring their requirements are met",
+            "Developing comprehensive requirements that align with user-centered and intuitive solutions",
+            "Creating visually appealing and impactful presentations to effectively communicate proposed solutions",
+            "Generating innovative ideas, wireframes, and mockups that enhance user experiences and drive client satisfaction"
+        ]
+    },
+    {
+        "id": 4,
+        "name": "Antaranga Dot Com Ltd",
+        "position": "Network Engineer",
+        "time": "Dec 2018-Oct 2021",
+        "location": "Dhaka, Bangladesh",
+        "responsibilities": [
+            "Configure, maintain, and troubleshoot Layer 2 switches, Mikrotik devices, and VLAN setups",
+            "Design and implement FTTX networks from the ground up, including configuring and troubleshooting OLT and ONU devices",
+            "Implement bandwidth management strategies to ensure optimal network performance",
+            "Utilize monitoring tools such as DUDE, Cacti, NMS, and Nagios for comprehensive network surveillance and troubleshooting"
+        ]
+    }
+]

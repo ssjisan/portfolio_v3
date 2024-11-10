@@ -1,0 +1,10 @@
+.gradiant::before {
+  content: "";
+  position: absolute;
+  inset: 0px; /* Position it to cover the whole container */
+  z-index: -100; /* Send it behind the content */
+  background-image: url(../Assets/gradient.svg);
+  background-repeat: no-repeat;
+  background-position: center top, center bottom;
+  background-size: 1400px;
+}

@@ -1,0 +1,116 @@
+[
+    {
+        "id": 1,
+        "title": "Internet Service Provider Website",
+        "imgUrl": "/projcets/feni-easy/1.webp",
+        "link": "https://www.behance.net/gallery/195011475/Internet-Service-Provider-Website",
+        "tags": [
+            "UI/UX Design",
+            "Development",
+            "Website"
+        ],
+        "imgSet": [
+            "/projcets/feni-easy/1.webp",
+            "/projcets/feni-easy/2.webp",
+            "/projcets/feni-easy/3.webp",
+            "/projcets/feni-easy/4.webp",
+            "/projcets/feni-easy/5.webp",
+            "/projcets/feni-easy/6.webp",
+            "/projcets/feni-easy/7.webp",
+            "/projcets/feni-easy/8.webp",
+            "/projcets/feni-easy/9.webp",
+            "/projcets/feni-easy/10.webp"
+        ]
+    },
+    {
+        "id": 2,
+        "title": "Developer Hiring Platform Application",
+        "imgUrl": "/projcets/techhack/1.webp",
+        "link": "https://www.behance.net/gallery/195527507/Developer-Hiring-Platform",
+        "tags": [
+            "UI/UX Design",
+            "Development",
+            "Application"
+        ],
+        "imgSet": [
+            "/projcets/techhack/1.webp",
+            "/projcets/techhack/2.webp",
+            "/projcets/techhack/3.webp",
+            "/projcets/techhack/4.webp",
+            "/projcets/techhack/5.webp",
+            "/projcets/techhack/6.webp",
+            "/projcets/techhack/7.webp",
+            "/projcets/techhack/8.webp",
+            "/projcets/techhack/9.webp"
+        ]
+    },
+    {
+        "id": 3,
+        "title": "Self Service Kiosk",
+        "imgUrl": "/projcets/kiosk/1.webp",
+        "link": "",
+        "tags": [
+            "Research",
+            "Wireframe",
+            "UI Design"
+        ],
+        "imgSet": [
+            "/projcets/kiosk/1.webp",
+            "/projcets/kiosk/2.webp",
+            "/projcets/kiosk/3.webp",
+            "/projcets/kiosk/4.webp",
+            "/projcets/kiosk/5.webp",
+            "/projcets/kiosk/6.webp",
+            "/projcets/kiosk/7.webp",
+            "/projcets/kiosk/8.webp",
+            "/projcets/kiosk/9.webp",
+            "/projcets/kiosk/10.webp",
+            "/projcets/kiosk/11.webp"
+        ]
+    },
+    {
+        "id": 4,
+        "title": "Accounts application for bill payment",
+        "imgUrl": "/projcets/accounts/1.webp",
+        "link": "https://www.behance.net/gallery/195744451/Accounts-application-for-bill-payment",
+        "tags": [
+            "Redesign",
+            "Wireframe",
+            "Application"
+        ],
+        "imgSet": [
+            "/projcets/accounts/1.webp",
+            "/projcets/accounts/2.webp",
+            "/projcets/accounts/3.webp",
+            "/projcets/accounts/4.webp",
+            "/projcets/accounts/5.webp",
+            "/projcets/accounts/6.webp"
+        ]
+    },
+    {
+        "id": 5,
+        "title": "Digital Agency Website",
+        "imgUrl": "/projcets/insighttech/1.webp",
+        "link": "",
+        "tags": [
+            "UI/UX Design",
+            "Development",
+            "Website"
+        ],
+        "imgSet": [
+            "/projcets/insighttech/1.webp",
+            "/projcets/insighttech/2.webp",
+            "/projcets/insighttech/3.webp",
+            "/projcets/insighttech/4.webp",
+            "/projcets/insighttech/5.webp",
+            "/projcets/insighttech/6.webp",
+            "/projcets/insighttech/7.webp",
+            "/projcets/insighttech/8.webp",
+            "/projcets/insighttech/9.webp",
+            "/projcets/insighttech/10.webp",
+            "/projcets/insighttech/11.webp",
+            "/projcets/insighttech/12.webp",
+            "/projcets/insighttech/13.webp"
+        ]
+    }
+]
