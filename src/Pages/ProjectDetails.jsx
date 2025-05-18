@@ -1,4 +1,3 @@
-import Navbar from "../Layout/Navbar";
 import { Container } from "@mui/material";
 import HeroSection from "../Components/ProjectDetails/HeroSection";
 import { useLocation, useParams } from "react-router-dom";
@@ -21,11 +20,10 @@ export default function ProjectDetails() {
     (project) => project.title === titleFromPath
   );
   return (
-    <Container className="gradiant" sx={{ pt: "120px" }}>
-      <Navbar />
+    <Container className="gradiant" >
       <HeroSection selectedProject={selectedProject} />
       <ProjectDetail selectedProject={selectedProject} />
-      <GoToTop/>
+      <GoToTop />
     </Container>
   );
 }

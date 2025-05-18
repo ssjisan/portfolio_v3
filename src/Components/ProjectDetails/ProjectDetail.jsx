@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 export default function ProjectDetail({selectedProject}) {
     
     return (
-        <Container sx={{ pt: "64px" }}>
+        <Container>
             <ProjectDetailsCard selectedProject={selectedProject}/>
         </Container>
     )

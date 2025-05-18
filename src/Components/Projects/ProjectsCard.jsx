@@ -42,7 +42,7 @@ export default function ProjectsCard() {
   return (
     <Box>
       <Grid container spacing={4}>
-        {Projects.map((data) => {
+        {[...Projects].reverse().map((data) => {
           const dynamicDelay = 50 * (data.id + 1);
           return (
             <Grid
@@ -76,8 +76,8 @@ export default function ProjectsCard() {
                         height: forBelow767
                           ? "375px"
                           : data.id % 2 === 0
-                          ? "450px"
-                          : "580px",
+                          ? "580px"
+                          : "450px",
                         mt: !forBelow767 && data.id % 2 === 0 && "64px",
                       }}
                     >

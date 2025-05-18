@@ -4,49 +4,51 @@ import PropTypes from "prop-types";
 import { useContext } from "react";
 import { DataContext } from "../../DataProcessing/DataProcessing";
 
+const imageVariants = {
+  hidden: { opacity: 0, y: 100 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.6, ease: "easeOut" },
+  },
+};
+
 export default function ProjectDetailsCard({ selectedProject }) {
   const { light } = useContext(DataContext);
   const { imgSet } = selectedProject;
 
   return (
-    <Box sx={{ pb: "48px", display: "flex", flexDirection: "column" }}>
-      {imgSet?.map((data, i) => {
-        return (
-          <motion.div
-            key={i}
-            initial={{ y: 100, opacity: 0 }}
-            whileInView={{
-              opacity: 1,
-              y: 0,
-              transition: {
-                duration: 0.5,
-              },
+    <Box sx={{ pb: "48px", display: "flex", flexDirection: "column", gap: 4 }}>
+      {imgSet?.map((data, i) => (
+        <motion.div
+          key={i}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.3 }}
+          variants={imageVariants}
+        >
+          <ImageList
+            sx={{
+              width: "100%",
+              height: "100%",
+              boxShadow:
+                !light && "rgba(145, 158, 171, 0.16) 0px 20px 40px -4px",
+              borderRadius: { xs: "8px", sm: "24px", md: "32px" },
+              overflow: "hidden",
             }}
-            viewport={{ once: true }}
+            cols={1}
           >
-            <ImageList
-              sx={{
-                width: "100%",
-                height: "100%",
-                boxShadow:
-                  !light && "rgba(145, 158, 171, 0.16) 0px 20px 40px -4px",
-                borderRadius: { xs: "8px", sm: "24px", md: "32px" },
-                overflow: "hidden",
-              }}
-              cols={1}
-            >
-              <ImageListItem key={i}>
-                <img
-                  srcSet={`${data}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
-                  src={`${data}?w=164&h=164&fit=crop&auto=format`}
-                  alt="{item.title}"
-                  loading="lazy"
-                />
-              </ImageListItem>
-            </ImageList>
-          </motion.div>
-        );
-      })}
+            <ImageListItem>
+              <img
+                srcSet={`${data}?w=800&auto=format&dpr=2 2x`}
+                src={`${data}?w=800&auto=format`}
+                alt=""
+                loading="lazy"
+              />
+            </ImageListItem>
+          </ImageList>
+        </motion.div>
+      ))}
     </Box>
   );
 }

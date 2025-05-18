@@ -100,6 +100,7 @@ export default function Navbar() {
               {!forBelow767 &&
                 menuItems.map((item) => (
                   <Typography
+                    onClick={goToTop}
                     key={item.path}
                     variant="subtitle2"
                     component={Link}

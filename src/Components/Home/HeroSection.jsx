@@ -41,7 +41,7 @@ export default function HeroSection() {
       <Box
         sx={{
           position: "relative",
-          mt: forBelow767 ? "15vh" : "20vh",
+          mt: forBelow767 ? "18vh" : "20vh",
         }}
       >
         <Box sx={ImageContainerSx}></Box>
@@ -94,7 +94,7 @@ export default function HeroSection() {
             variant="h2"
             color={light ? "text.tertiary" : "text.primary"}
           >
-            Hey, I&apos;m Jisan <br /> An UI/UX Engineer with over 3 years of
+            Hey, I&apos;m Jisan <br /> An UI/UX Engineer with over 4 years of
             experience.
           </Typography>
           <Typography
