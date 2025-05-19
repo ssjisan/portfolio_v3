@@ -1,7 +1,6 @@
 import { Container, Grid, useMediaQuery } from "@mui/material";
 import BasicInfo from "./BasicInfo";
 import LinkedMedia from "./LinkedMedia";
-import AboutSlider from "./AboutSlider";
 
 export default function AboutBody() {
   const forBelow767 = useMediaQuery("(max-width:767px)");
@@ -16,7 +15,7 @@ export default function AboutBody() {
         <Grid item sm={12} md={6} sx={{ maxWidth: "100% !important" }}>
           <BasicInfo />
         </Grid>
-        <Grid item sm={12} md={6}>
+        <Grid item md={6} lg={6}>
           <LinkedMedia />
         </Grid>
       </Grid>

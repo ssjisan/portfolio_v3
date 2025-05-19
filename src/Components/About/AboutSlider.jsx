@@ -17,49 +17,60 @@ const items = [
 
 export default function AboutSlider() {
   const sliderRef = useRef(null);
+  const animationRef = useRef(null);
+  const positionRef = useRef(0);
   const isMobile = useMediaQuery("(max-width:600px)");
   const isTablet = useMediaQuery("(max-width:960px)");
 
-  // Define card width based on screen size
   const cardWidth = isMobile ? 280 : isTablet ? 300 : 360;
-
   const duplicatedItems = [...items, ...items];
+  const speed = 1.5;
 
-  // Slight alternating rotation effect
   const rotationStyles = items.map((_, idx) => {
     const deg = (idx % 2 === 0 ? 1 : -1) * (1 + Math.floor(Math.random() * 3));
     return `rotate(${deg}deg)`;
   });
 
-  useEffect(() => {
-    let animationFrame;
-    let position = 0;
-    const speed = 2;
+  const scroll = () => {
+    positionRef.current -= speed;
 
-    const scroll = () => {
-      position -= speed;
-      if (sliderRef.current) {
-        const scrollWidth = sliderRef.current.scrollWidth / 2;
-        sliderRef.current.style.transform = `translateX(${position}px)`;
-        if (Math.abs(position) >= scrollWidth) {
-          position = 0;
-        }
+    const el = sliderRef.current;
+    if (el) {
+      const scrollWidth = el.scrollWidth / 2;
+      if (Math.abs(positionRef.current) >= scrollWidth) {
+        positionRef.current = 0;
       }
-      animationFrame = requestAnimationFrame(scroll);
-    };
+      el.style.transform = `translateX(${positionRef.current}px)`;
+    }
 
-    scroll();
-    return () => cancelAnimationFrame(animationFrame);
+    animationRef.current = requestAnimationFrame(scroll);
+  };
+
+  useEffect(() => {
+    animationRef.current = requestAnimationFrame(scroll);
+    return () => cancelAnimationFrame(animationRef.current);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
+
+  const handleMouseEnter = () => {
+    cancelAnimationFrame(animationRef.current);
+  };
+
+  const handleMouseLeave = () => {
+    animationRef.current = requestAnimationFrame(scroll);
+  };
 
   return (
     <Box sx={{ overflow: "hidden", width: "100%", py: 4 }}>
       <Box
         ref={sliderRef}
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
         sx={{
           display: "flex",
           width: "max-content",
           gap: 4,
+          willChange: "transform",
         }}
       >
         {duplicatedItems.map((item, idx) => (
